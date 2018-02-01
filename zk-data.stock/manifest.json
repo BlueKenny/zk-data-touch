@@ -1,0 +1,15 @@
+{
+    "name": "zk-data.stock",
+    "description": "A short description of your app",
+    "architecture": "armhf",
+    "title": "Stock",
+    "hooks": {
+        "zk-data.stock": {
+            "apparmor": "zk-data.stock.apparmor",
+            "desktop":  "zk-data.stock.desktop"
+        }
+    },
+    "version": "0.0.11",
+    "maintainer": "Zaunz Kenny <bluez@linuxmail.org>",
+    "framework" : "ubuntu-sdk-15.04.6"
+}

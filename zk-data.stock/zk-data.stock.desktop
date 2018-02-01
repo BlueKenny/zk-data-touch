@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Stock
+Exec=python/Stock.pyw
+Icon=assets/logo.svg
+Terminal=false
+Type=Application
+X-Ubuntu-Touch=true
