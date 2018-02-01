@@ -12,7 +12,7 @@ else: DIR = ""
 
 BlueMkDir(DIR + "DATA")
 
-if BlueLoad("SERVERSTOCK", DIR + "DATA/DATA") == None: BlueSave("SERVERSTOCK", "kenny-H61M-D2G-USB3", DIR + "DATA/DATA")
+if BlueLoad("SERVERSTOCK", DIR + "DATA/DATA") == None: BlueSave("SERVERSTOCK", "127.0.0.1", DIR + "DATA/DATA")
 if BlueLoad("SERVERPREISVORSCHLAG", DIR + "DATA/DATA") == None: BlueSave("SERVERPREISVORSCHLAG", "127.0.0.1", DIR + "DATA/DATA")
 
 #SERVER_IP = ("10.0.0.1", 10000)#(BlueLoad("SERVER", "DATA/DATA"), 10000)

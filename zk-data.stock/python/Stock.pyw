@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
 import sys
@@ -7,7 +7,9 @@ from PyQt5.QtGui import *
 from PyQt5.QtCore import *
 from PyQt5.QtWidgets import *
 
-import send
+if os.path.exists("/home/phablet"): import send
+else: import libs.send
+
 
 class Stock(QWidget):
 
@@ -94,6 +96,12 @@ class Stock(QWidget):
                 #    ListItem.setIcon(QIcon(BildPfad))
                 self.model.appendRow(Items)
             self.model.setVerticalHeaderLabels(IDsInStock)
+            header = self.Suche_Table.horizontalHeader()
+            header.setSectionResizeMode(0, QHeaderView.Stretch)
+            header.setSectionResizeMode(1, QHeaderView.ResizeToContents)
+            header.setSectionResizeMode(2, QHeaderView.ResizeToContents)
+            header.setSectionResizeMode(4, QHeaderView.ResizeToContents)
+            header.setSectionResizeMode(5, QHeaderView.Stretch)
 
     def keyPressEvent(self, event):
         if event.key() == Qt.Key_Delete:
